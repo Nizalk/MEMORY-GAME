@@ -12,6 +12,7 @@ typedef struct {
     GtkWidget   *window;
     int          diff;
     int          nbrjoueur;
+    int          scorejouer[4];
     const gchar *pseudojoueur1;
     const gchar *pseudojoueur2;
     const gchar *pseudojoueur3;
@@ -64,7 +65,14 @@ builder=gtk_builder_new_from_file("INTERFACEDUJEU.glade");
 }
 
 
+void hide(GtkWidget *ButtonExplore,GtkWidget *carte){
 
+     gtk_widget_destroy(carte);
+
+
+
+
+}
 
 
 
@@ -81,15 +89,16 @@ void fctjeufacile(GtkWidget *ButtonExplore,_widgets *g_widget){
 
 
     builder=gtk_builder_new_from_file("INTERFACEDUJEU.glade");
-    window7=GTK_WIDGET(gtk_builder_get_object(builder,"PLATEAUDEJEUFACILE"));
+    window7=GTK_WIDGET(gtk_builder_get_object(builder,"facile"));
 
-    carte[0]=GTK_WIDGET(gtk_builder_get_object(builder,"carte1"));
+    carte[0]=GTK_WIDGET(gtk_builder_get_object(builder,"carteun"));
     carte[1]=GTK_WIDGET(gtk_builder_get_object(builder,"carte2"));
     carte[2]=GTK_WIDGET(gtk_builder_get_object(builder,"carte3"));
     carte[3]=GTK_WIDGET(gtk_builder_get_object(builder,"carte4"));
     carte[4]=GTK_WIDGET(gtk_builder_get_object(builder,"carte5"));
     carte[5]=GTK_WIDGET(gtk_builder_get_object(builder,"carte6"));
-
+    player=GTK_WIDGET(gtk_builder_get_object(builder,"IMAGE1"));
+    g_signal_connect(G_OBJECT(carte[0]),"clicked",G_CALLBACK(hide),carte[0]);
 
     gtk_widget_show_all(window7);
 
@@ -241,9 +250,9 @@ void fctjeumoyen(GtkWidget *ButtonExplore,_widgets *g_widget){
 
 
 
-  void fctchoixdenbrjoueur(GtkWidget *ButtonExplore,GtkWidget *window2){
+  void fctchoixdenbrjoueur(GtkWidget *ButtonExplore,GtkWidget *g_widget){
     //definir les variables local de la fct
-    gtk_widget_destroy(window2);
+
     GtkWidget *window;
     GtkWidget *unjoueur;
     GtkWidget *deuxjoueur;
@@ -258,19 +267,19 @@ void fctjeumoyen(GtkWidget *ButtonExplore,_widgets *g_widget){
 
     builder=gtk_builder_new_from_file("INTERFACEDUJEU.glade");
 
-    window=GTK_WIDGET(gtk_builder_get_object(builder,"CHOIX NOMBRES DE JOUEUR"));
+    window=GTK_WIDGET(gtk_builder_get_object(builder,"NBRJOUEURCHOICE"));
 
-    unjoueur=GTK_WIDGET(gtk_builder_get_object(builder,"UNJOUEUR"));
-    deuxjoueur=GTK_WIDGET(gtk_builder_get_object(builder,"DEUXJOUEUR"));
-    troisjoueur=GTK_WIDGET(gtk_builder_get_object(builder,"TROISJOUEUR"));
-    quatrejoueur=GTK_WIDGET(gtk_builder_get_object(builder,"QUATREJOUEUR"));
-    /*goback=GTK_WIDGET(gtk_builder_get_object(builder,"RETOUR"));*/
+    unjoueur=GTK_WIDGET(gtk_builder_get_object(builder,"UN JOUEUR"));
+    deuxjoueur=GTK_WIDGET(gtk_builder_get_object(builder,"DEUJOUEUR"));
+    troisjoueur=GTK_WIDGET(gtk_builder_get_object(builder,"TROIJOUEUR"));
+    quatrejoueur=GTK_WIDGET(gtk_builder_get_object(builder,"QUATRE JOUEUR"));
+    goback=GTK_WIDGET(gtk_builder_get_object(builder,"RETOUR"));
 
 
 
     //donner le signal a chaque variable et la fct qui doit la suivre
 
-    /*g_signal_connect(G_OBJECT(unjoueur),"clicked",G_CALLBACK(ajoutnbrjoueur1),g_widget );
+    g_signal_connect(G_OBJECT(unjoueur),"clicked",G_CALLBACK(ajoutnbrjoueur1),g_widget );
     g_signal_connect(G_OBJECT(unjoueur),"clicked",G_CALLBACK(fctpseudo),g_widget );
 
 
@@ -281,9 +290,9 @@ void fctjeumoyen(GtkWidget *ButtonExplore,_widgets *g_widget){
     g_signal_connect(G_OBJECT(troisjoueur),"clicked",G_CALLBACK(fctpseudo),g_widget );
 
     g_signal_connect(G_OBJECT(quatrejoueur),"clicked",G_CALLBACK(ajoutnbrjoueur4),g_widget );
-    g_signal_connect(G_OBJECT(quatrejoueur),"clicked",G_CALLBACK(fctpseudo),g_widget );*/
+    g_signal_connect(G_OBJECT(quatrejoueur),"clicked",G_CALLBACK(fctpseudo),g_widget );
 
-    gtk_window_set_position(window,GTK_WIN_POS_CENTER);
+
 
     //faire apparaitre la fenetre
     gtk_widget_show_all(window);
@@ -301,8 +310,8 @@ void fctjeumoyen(GtkWidget *ButtonExplore,_widgets *g_widget){
 
    void ajoutdifficile(GtkWidget *ButtonExplore, _widgets *g_widget){g_widget->diff=DIFFICILE;}
 
-  void fctchoixdediffulte(GtkWidget *ButtonExplore, GtkWidget *window){
-      gtk_widget_destroy(window);
+  void fctchoixdediffulte(GtkWidget *ButtonExplore, GtkWidget *g_widget){
+
 
     GtkWidget *facile;
     GtkWidget *moyen;
@@ -317,17 +326,17 @@ void fctjeumoyen(GtkWidget *ButtonExplore,_widgets *g_widget){
     moyen=GTK_WIDGET(gtk_builder_get_object(builder,"BTNMOYEN"));
     difficile=GTK_WIDGET(gtk_builder_get_object(builder,"BTNDIFFICILE"));
 
-    /*g_signal_connect(G_OBJECT(facile),"clicked",G_CALLBACK(ajoutfacile),g_widget );*/
-    g_signal_connect(G_OBJECT(facile),"clicked",G_CALLBACK(fctchoixdenbrjoueur),window2 );
+    g_signal_connect(G_OBJECT(facile),"clicked",G_CALLBACK(ajoutfacile),g_widget );
+    g_signal_connect(G_OBJECT(facile),"clicked",G_CALLBACK(fctchoixdenbrjoueur),g_widget );
 
-    /*g_signal_connect(G_OBJECT(moyen),"clicked",G_CALLBACK(ajoutmoyen),g_widget );*/
-    g_signal_connect(G_OBJECT(moyen),"clicked",G_CALLBACK(fctchoixdenbrjoueur),window2 );
+    g_signal_connect(G_OBJECT(moyen),"clicked",G_CALLBACK(ajoutmoyen),g_widget );
+    g_signal_connect(G_OBJECT(moyen),"clicked",G_CALLBACK(fctchoixdenbrjoueur),g_widget );
 
 
-    /*g_signal_connect(G_OBJECT(difficile),"clicked",G_CALLBACK(ajoutdifficile),g_widget );*/
-    g_signal_connect(G_OBJECT(difficile),"clicked",G_CALLBACK(fctchoixdenbrjoueur),NULL );
+    g_signal_connect(G_OBJECT(difficile),"clicked",G_CALLBACK(ajoutdifficile),g_widget );
+    g_signal_connect(G_OBJECT(difficile),"clicked",G_CALLBACK(fctchoixdenbrjoueur),g_widget );
 
-    gtk_window_set_position(window2,GTK_WIN_POS_CENTER);
+
 
     gtk_widget_show_all(window2);
   }
@@ -372,28 +381,39 @@ void fctnizar(GtkWidget *ButtonExplore, _widgets *g_widget){
       gtk_stack_set_visible_child_full (Stack,"page2",GTK_STACK_TRANSITION_TYPE_SLIDE_LEFT);}*/
 
 
+GtkStack *stack;
+GtkWidget *p1;
+GtkWidget *p2;
 
 
 
 
 
+void exemple(GtkWidget *ButtonExplore, _widgets *g_widget){
 
 
-int main (int argc, char **argv)
-{ /* Initialisation de GTK+ */
-    gtk_init (&argc, &argv);
+      gtk_stack_set_visible_child_full (stack,"page2",GTK_STACK_TRANSITION_TYPE_SLIDE_LEFT);
 
+
+}
+
+
+void fctacceuil(GtkWidget *ButtonExplore, _widgets *g_widget){
     GtkWidget *jouer;
     GtkWidget *score;
     GtkWidget *quittez;
     GtkBuilder *builder;
-    _widgets   *g_widget;
+
     GtkWidget *window;
+
+
 
   /* Creation de la fenetre principale de notre application */
 
 
     builder=gtk_builder_new_from_file("INTERFACEDUJEU.glade");
+
+
     window=GTK_WIDGET(gtk_builder_get_object(builder,"ACCEUIL"));
 
 
@@ -407,9 +427,9 @@ int main (int argc, char **argv)
   /* Creation du conteneur principal */
 
 
-    g_signal_connect(G_OBJECT(score),"clicked",G_CALLBACK(gtk_main_quit),NULL );
-    g_signal_connect(G_OBJECT(jouer),"clicked",G_CALLBACK(fctchoixdediffulte),window);
-    g_signal_connect(G_OBJECT(quittez),"clicked",G_CALLBACK(fctquittez),NULL );
+    g_signal_connect(G_OBJECT(score),"clicked",G_CALLBACK(gtk_main_quit),g_widget );
+    g_signal_connect(G_OBJECT(jouer),"clicked",G_CALLBACK(fctjeufacile),g_widget);
+    g_signal_connect(G_OBJECT(quittez),"clicked",G_CALLBACK(fctquittez),g_widget );
 
 
    gtk_window_set_position(window,GTK_WIN_POS_CENTER);
@@ -417,6 +437,25 @@ int main (int argc, char **argv)
    /* Affichage de la fenetre principale */
 
    gtk_widget_show_all (window);
+
+}
+
+
+int main (int argc, char **argv)
+{ /* Initialisation de GTK+ */
+    gtk_init (&argc, &argv);
+    _widgets *g_widget;
+
+
+
+    GtkWidget *ButtonExplore;
+
+
+
+
+
+
+    fctacceuil(GtkWidget *ButtonExplore, _widgets *g_widget);
 
    /* Lancement de la boucle principale */
 
