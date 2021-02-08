@@ -2,324 +2,6 @@
 <!-- Generated with glade 3.38.2 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
-  <object class="GtkWindow" id="1">
-    <property name="can-focus">False</property>
-    <property name="resizable">False</property>
-    <property name="default-width">1200</property>
-    <property name="default-height">896</property>
-    <child>
-      <object class="GtkFixed">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <child>
-          <object class="GtkImage">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="pixbuf">..\PROJET C\Images Projet C\background\insertionpseudounjoueur.png</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkEntry">
-            <property name="width-request">150</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-length">15</property>
-            <property name="width-chars">15</property>
-            <property name="max-width-chars">15</property>
-          </object>
-          <packing>
-            <property name="x">435</property>
-            <property name="y">400</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">130</property>
-            <property name="height-request">50</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <property name="relief">none</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\PROJET C\Images Projet C\BUTTON\CONFIRMER.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">620</property>
-            <property name="y">635</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
-  <object class="GtkWindow" id="2">
-    <property name="can-focus">False</property>
-    <property name="resizable">False</property>
-    <property name="default-width">1200</property>
-    <property name="default-height">896</property>
-    <child>
-      <object class="GtkFixed">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <child>
-          <object class="GtkImage">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="pixbuf">..\PROJET C\Images Projet C\background\insertionpseudodeuxjoueur.png</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkEntry">
-            <property name="width-request">150</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-length">15</property>
-            <property name="width-chars">15</property>
-            <property name="max-width-chars">15</property>
-          </object>
-          <packing>
-            <property name="x">435</property>
-            <property name="y">400</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkEntry">
-            <property name="width-request">150</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-length">15</property>
-            <property name="width-chars">15</property>
-            <property name="max-width-chars">15</property>
-          </object>
-          <packing>
-            <property name="x">435</property>
-            <property name="y">510</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">130</property>
-            <property name="height-request">50</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <property name="relief">none</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\PROJET C\Images Projet C\BUTTON\CONFIRMER.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">620</property>
-            <property name="y">635</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
-  <object class="GtkWindow" id="3">
-    <property name="can-focus">False</property>
-    <property name="resizable">False</property>
-    <property name="default-width">1200</property>
-    <property name="default-height">896</property>
-    <child>
-      <object class="GtkFixed">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <child>
-          <object class="GtkImage">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="pixbuf">..\PROJET C\Images Projet C\background\insertionpseudotroisjoueur.png</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkEntry">
-            <property name="width-request">150</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-length">15</property>
-            <property name="width-chars">15</property>
-            <property name="max-width-chars">15</property>
-          </object>
-          <packing>
-            <property name="x">435</property>
-            <property name="y">400</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkEntry">
-            <property name="width-request">150</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-length">15</property>
-            <property name="width-chars">15</property>
-            <property name="max-width-chars">15</property>
-          </object>
-          <packing>
-            <property name="x">435</property>
-            <property name="y">510</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">130</property>
-            <property name="height-request">50</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <property name="relief">none</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\PROJET C\Images Projet C\BUTTON\CONFIRMER.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">620</property>
-            <property name="y">635</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkEntry">
-            <property name="width-request">150</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-length">15</property>
-            <property name="width-chars">15</property>
-            <property name="max-width-chars">15</property>
-          </object>
-          <packing>
-            <property name="x">435</property>
-            <property name="y">600</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
-  <object class="GtkWindow" id="4">
-    <property name="can-focus">False</property>
-    <property name="resizable">False</property>
-    <property name="default-width">1200</property>
-    <property name="default-height">896</property>
-    <child>
-      <object class="GtkFixed">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <child>
-          <object class="GtkImage">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="pixbuf">..\PROJET C\Images Projet C\background\insertionpseudoquatrejoueur.png</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkEntry">
-            <property name="width-request">150</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-length">15</property>
-            <property name="width-chars">15</property>
-            <property name="max-width-chars">15</property>
-          </object>
-          <packing>
-            <property name="x">435</property>
-            <property name="y">380</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkEntry">
-            <property name="width-request">150</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-length">15</property>
-            <property name="width-chars">15</property>
-            <property name="max-width-chars">15</property>
-          </object>
-          <packing>
-            <property name="x">435</property>
-            <property name="y">460</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">130</property>
-            <property name="height-request">50</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <property name="relief">none</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\PROJET C\Images Projet C\BUTTON\CONFIRMER.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">620</property>
-            <property name="y">635</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkEntry">
-            <property name="width-request">150</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-length">15</property>
-            <property name="width-chars">15</property>
-            <property name="max-width-chars">15</property>
-          </object>
-          <packing>
-            <property name="x">435</property>
-            <property name="y">540</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkEntry">
-            <property name="width-request">150</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-length">15</property>
-            <property name="width-chars">15</property>
-            <property name="max-width-chars">15</property>
-          </object>
-          <packing>
-            <property name="x">435</property>
-            <property name="y">625</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
   <object class="GtkWindow" id="ACCEUIL">
     <property name="can-focus">False</property>
     <property name="resizable">False</property>
@@ -692,6 +374,78 @@
           <packing>
             <property name="x">179</property>
             <property name="y">159</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="DEUXPSEUDO">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="default-width">1200</property>
+    <property name="default-height">896</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">..\PROJET C\Images Projet C\background\insertionpseudodeuxjoueur.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width-request">150</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">15</property>
+            <property name="width-chars">15</property>
+            <property name="max-width-chars">15</property>
+          </object>
+          <packing>
+            <property name="x">435</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width-request">150</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">15</property>
+            <property name="width-chars">15</property>
+            <property name="max-width-chars">15</property>
+          </object>
+          <packing>
+            <property name="x">435</property>
+            <property name="y">510</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">130</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">..\PROJET C\Images Projet C\BUTTON\CONFIRMER.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">620</property>
+            <property name="y">635</property>
           </packing>
         </child>
       </object>
@@ -1671,6 +1425,108 @@
       </object>
     </child>
   </object>
+  <object class="GtkWindow" id="QUATREPSEUDO">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="default-width">1200</property>
+    <property name="default-height">896</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">..\PROJET C\Images Projet C\background\insertionpseudoquatrejoueur.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width-request">150</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">15</property>
+            <property name="width-chars">15</property>
+            <property name="max-width-chars">15</property>
+          </object>
+          <packing>
+            <property name="x">435</property>
+            <property name="y">380</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width-request">150</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">15</property>
+            <property name="width-chars">15</property>
+            <property name="max-width-chars">15</property>
+          </object>
+          <packing>
+            <property name="x">435</property>
+            <property name="y">460</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">130</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">..\PROJET C\Images Projet C\BUTTON\CONFIRMER.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">620</property>
+            <property name="y">635</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width-request">150</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">15</property>
+            <property name="width-chars">15</property>
+            <property name="max-width-chars">15</property>
+          </object>
+          <packing>
+            <property name="x">435</property>
+            <property name="y">540</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width-request">150</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">15</property>
+            <property name="width-chars">15</property>
+            <property name="max-width-chars">15</property>
+          </object>
+          <packing>
+            <property name="x">435</property>
+            <property name="y">625</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
   <object class="GtkWindow" id="TOP10">
     <property name="can-focus">False</property>
     <property name="default-width">1100</property>
@@ -1996,6 +1852,150 @@
           <packing>
             <property name="x">-127</property>
             <property name="y">464</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="TROISPSEUDO">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="default-width">1200</property>
+    <property name="default-height">896</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">..\PROJET C\Images Projet C\background\insertionpseudotroisjoueur.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width-request">150</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">15</property>
+            <property name="width-chars">15</property>
+            <property name="max-width-chars">15</property>
+          </object>
+          <packing>
+            <property name="x">435</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width-request">150</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">15</property>
+            <property name="width-chars">15</property>
+            <property name="max-width-chars">15</property>
+          </object>
+          <packing>
+            <property name="x">435</property>
+            <property name="y">510</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">130</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">..\PROJET C\Images Projet C\BUTTON\CONFIRMER.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">620</property>
+            <property name="y">635</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width-request">150</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">15</property>
+            <property name="width-chars">15</property>
+            <property name="max-width-chars">15</property>
+          </object>
+          <packing>
+            <property name="x">435</property>
+            <property name="y">600</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="UNPSEUDO">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="default-width">1200</property>
+    <property name="default-height">896</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">..\PROJET C\Images Projet C\background\insertionpseudounjoueur.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width-request">150</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">15</property>
+            <property name="width-chars">15</property>
+            <property name="max-width-chars">15</property>
+          </object>
+          <packing>
+            <property name="x">435</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">130</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">..\PROJET C\Images Projet C\BUTTON\CONFIRMER.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">620</property>
+            <property name="y">635</property>
           </packing>
         </child>
       </object>
