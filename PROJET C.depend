@@ -2981,9 +2981,11 @@
 
 1612636335 c:\users\elkha\jeu de memoire\projet c\structure.h
 
-1612822844 source:c:\users\elkha\jeu de memoire\memory-game\main.c
+1612883336 source:c:\users\elkha\jeu de memoire\memory-game\main.c
 	<stdio.h>
 	<gtk/gtk.h>
+	<time.h>
+	<string.h>
 
 1612824579 source:c:\users\elkha\jeu de memoire\memory-game\algorithme.c
 

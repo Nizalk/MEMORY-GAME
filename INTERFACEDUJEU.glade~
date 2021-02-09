@@ -177,7 +177,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="goabck2">
             <property name="width-request">60</property>
             <property name="height-request">45</property>
             <property name="visible">True</property>
@@ -283,7 +283,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="retour1">
             <property name="width-request">60</property>
             <property name="height-request">45</property>
             <property name="visible">True</property>
@@ -532,7 +532,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="goabck4">
             <property name="width-request">57</property>
             <property name="height-request">45</property>
             <property name="visible">True</property>
@@ -574,7 +574,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="retouracceuil">
             <property name="width-request">57</property>
             <property name="height-request">50</property>
             <property name="visible">True</property>
@@ -595,7 +595,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="pseudo1">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -612,7 +612,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="pseudo2">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -629,7 +629,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="pseudo3">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -646,7 +646,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="pseudo4">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -662,7 +662,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="pseudo5">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -678,7 +678,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="score1">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -694,7 +694,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="score2">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -710,7 +710,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="score3">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -726,7 +726,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="score4">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -742,7 +742,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="score5">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -755,19 +755,6 @@
           <packing>
             <property name="x">670</property>
             <property name="y">600</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">-127</property>
-            <property name="y">464</property>
           </packing>
         </child>
       </object>
@@ -858,7 +845,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="goabck3">
             <property name="width-request">60</property>
             <property name="height-request">45</property>
             <property name="visible">True</property>
@@ -936,7 +923,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="goabck1">
             <property name="width-request">60</property>
             <property name="height-request">45</property>
             <property name="visible">True</property>
@@ -963,7 +950,7 @@
     <property name="can-focus">False</property>
     <property name="resizable">False</property>
     <property name="default-width">563</property>
-    <property name="default-height">190</property>
+    <property name="default-height">150</property>
     <child>
       <object class="GtkFixed">
         <property name="visible">True</property>
@@ -978,7 +965,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="oui">
             <property name="width-request">82</property>
             <property name="height-request">45</property>
             <property name="visible">True</property>
@@ -995,11 +982,11 @@
           </object>
           <packing>
             <property name="x">125</property>
-            <property name="y">140</property>
+            <property name="y">130</property>
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="non">
             <property name="width-request">82</property>
             <property name="height-request">45</property>
             <property name="visible">True</property>
@@ -1016,7 +1003,7 @@
           </object>
           <packing>
             <property name="x">300</property>
-            <property name="y">140</property>
+            <property name="y">130</property>
           </packing>
         </child>
       </object>
@@ -1041,7 +1028,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte321">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1062,7 +1049,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte331">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1083,7 +1070,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte332">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1104,7 +1091,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte322">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1125,7 +1112,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte323">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1146,7 +1133,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte333">
             <property name="width-request">70</property>
             <property name="height-request">109</property>
             <property name="visible">True</property>
@@ -1167,7 +1154,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte324">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1188,7 +1175,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte325">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1209,7 +1196,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte334">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1230,7 +1217,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte335">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1251,7 +1238,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="playeringame3">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1285,7 +1272,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte336">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1306,7 +1293,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte326">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1327,7 +1314,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte312">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1348,7 +1335,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte311">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1700,7 +1687,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="btnretouracceuil">
             <property name="width-request">130</property>
             <property name="height-request">50</property>
             <property name="visible">True</property>
@@ -1721,7 +1708,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="btnreccomencerpartie">
             <property name="width-request">130</property>
             <property name="height-request">50</property>
             <property name="visible">True</property>
