@@ -107,241 +107,9 @@
       </object>
     </child>
   </object>
-  <object class="GtkWindow" id="AFFICHAGEDESCORE">
-    <property name="can-focus">False</property>
-    <property name="default-width">1100</property>
-    <property name="default-height">820</property>
-    <child>
-      <object class="GtkStack" id="main ">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <child>
-          <object class="GtkLayout" id="page1">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="width">1200</property>
-            <property name="height">896</property>
-            <child>
-              <object class="GtkImage">
-                <property name="width-request">100</property>
-                <property name="height-request">80</property>
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\PROJET C\Images Projet C\background\diffculte.png</property>
-              </object>
-            </child>
-            <child>
-              <object class="GtkButton" id="btn">
-                <property name="label" translatable="yes">button</property>
-                <property name="width-request">100</property>
-                <property name="height-request">80</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-              </object>
-              <packing>
-                <property name="x">800</property>
-                <property name="y">500</property>
-              </packing>
-            </child>
-          </object>
-          <packing>
-            <property name="name">page1</property>
-            <property name="title" translatable="yes">page0</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLayout" id="page2">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage">
-                <property name="width-request">100</property>
-                <property name="height-request">80</property>
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\PROJET C\Images Projet C\background\diffculte.png</property>
-              </object>
-              <packing>
-                <property name="x">-104</property>
-                <property name="y">38</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkButton">
-                <property name="label" translatable="yes">button</property>
-                <property name="width-request">100</property>
-                <property name="height-request">80</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-              </object>
-              <packing>
-                <property name="x">100</property>
-                <property name="y">45</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkButton">
-                <property name="label" translatable="yes">button</property>
-                <property name="width-request">100</property>
-                <property name="height-request">80</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-              </object>
-              <packing>
-                <property name="x">-10</property>
-                <property name="y">100</property>
-              </packing>
-            </child>
-          </object>
-          <packing>
-            <property name="name">page2</property>
-            <property name="title" translatable="yes">page1</property>
-            <property name="position">1</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
-  <object class="GtkWindow" id="CHOIX DE DIFFUCLTE">
-    <property name="can-focus">False</property>
-    <property name="default-width">1100</property>
-    <property name="default-height">820</property>
-    <child>
-      <object class="GtkFixed">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <child>
-          <object class="GtkButton" id="MOYEN">
-            <property name="label" translatable="yes">MOYEN</property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-          </object>
-          <packing>
-            <property name="x">475</property>
-            <property name="y">177</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="FACILE">
-            <property name="label" translatable="yes">FACILE</property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-          </object>
-          <packing>
-            <property name="x">525</property>
-            <property name="y">82</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="DIFFICILE">
-            <property name="label" translatable="yes">DIFFICILE</property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-          </object>
-          <packing>
-            <property name="x">516</property>
-            <property name="y">355</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="RETOUR1">
-            <property name="label" translatable="yes">RETOUR</property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-          </object>
-          <packing>
-            <property name="x">84</property>
-            <property name="y">506</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
-  <object class="GtkWindow" id="CHOIX NOMBRES DE JOUEUR">
-    <property name="can-focus">False</property>
-    <property name="default-width">1100</property>
-    <property name="default-height">820</property>
-    <child>
-      <object class="GtkFixed">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <property name="margin-bottom">35</property>
-        <child>
-          <object class="GtkButton" id="DEUXJOUEUR">
-            <property name="label" translatable="yes">2 JOUEUR</property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-          </object>
-          <packing>
-            <property name="x">422</property>
-            <property name="y">148</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="TROISJOUEUR">
-            <property name="label" translatable="yes">3 JOUEUR</property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-          </object>
-          <packing>
-            <property name="x">453</property>
-            <property name="y">292</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="QUATREJOUEUR">
-            <property name="label" translatable="yes">4 JOUEUR</property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-          </object>
-          <packing>
-            <property name="x">485</property>
-            <property name="y">455</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="UNJOUEUR">
-            <property name="label" translatable="yes">1 JOUEUR </property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-          </object>
-          <packing>
-            <property name="x">496</property>
-            <property name="y">58</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
   <object class="GtkWindow" id="CONFIRMATION DE QUITTEZ">
     <property name="can-focus">False</property>
+    <property name="resizable">False</property>
     <property name="default-width">1100</property>
     <property name="default-height">820</property>
     <child>
@@ -398,7 +166,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkEntry">
+          <object class="GtkEntry" id="PSEUDO21">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -413,7 +181,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkEntry">
+          <object class="GtkEntry" id="PSEUDO22">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -428,7 +196,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="CONFIRMATION2">
             <property name="width-request">130</property>
             <property name="height-request">50</property>
             <property name="visible">True</property>
@@ -446,6 +214,27 @@
           <packing>
             <property name="x">620</property>
             <property name="y">635</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">60</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\goback3.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">420</property>
+            <property name="y">640</property>
           </packing>
         </child>
       </object>
@@ -533,95 +322,25 @@
             <property name="y">540</property>
           </packing>
         </child>
-      </object>
-    </child>
-  </object>
-  <object class="GtkWindow" id="INSERTIONS DES PSEUDO DES JOUEUR ">
-    <property name="can-focus">False</property>
-    <property name="default-width">1100</property>
-    <property name="default-height">820</property>
-    <child>
-      <object class="GtkFixed">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
         <child>
-          <object class="GtkEntry" id="PSEUDOJOUEUR1">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-width-chars">10</property>
-          </object>
-          <packing>
-            <property name="x">434</property>
-            <property name="y">87</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkEntry" id="PSEUDOJOUEUR2">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-width-chars">10</property>
-          </object>
-          <packing>
-            <property name="x">458</property>
-            <property name="y">247</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkEntry" id="PSEUDOJOUEUR3">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-width-chars">10</property>
-          </object>
-          <packing>
-            <property name="x">531</property>
-            <property name="y">392</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkEntry" id="PSEUDOJOUEUR4">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="max-width-chars">10</property>
-          </object>
-          <packing>
-            <property name="x">566</property>
-            <property name="y">552</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="CONFIRMATION">
-            <property name="label" translatable="yes">CONFIRAMTION</property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
+          <object class="GtkButton">
+            <property name="width-request">60</property>
+            <property name="height-request">45</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\goback3.PNG</property>
+              </object>
+            </child>
           </object>
           <packing>
-            <property name="x">848</property>
-            <property name="y">742</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="RETOUR2">
-            <property name="label" translatable="yes">RETOUR</property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-          </object>
-          <packing>
-            <property name="x">122</property>
-            <property name="y">761</property>
+            <property name="x">420</property>
+            <property name="y">640</property>
           </packing>
         </child>
       </object>
@@ -731,8 +450,8 @@
         </child>
         <child>
           <object class="GtkButton" id="RETOUR">
-            <property name="width-request">57</property>
-            <property name="height-request">50</property>
+            <property name="width-request">60</property>
+            <property name="height-request">45</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
@@ -741,685 +460,13 @@
               <object class="GtkImage">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="pixbuf">..\PROJET C\Images Projet C\BUTTON\goback.PNG</property>
+                <property name="pixbuf">Images Projet C\BUTTON\goback3.PNG</property>
               </object>
             </child>
           </object>
           <packing>
             <property name="x">420</property>
             <property name="y">640</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
-  <object class="GtkWindow" id="PLATEAUDEJEUDIFFICILE">
-    <property name="can-focus">False</property>
-    <property name="default-width">1200</property>
-    <property name="default-height">896</property>
-    <child>
-      <object class="GtkFixed">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">85</property>
-            <property name="y">211</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">353</property>
-            <property name="y">232</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">563</property>
-            <property name="y">262</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">793</property>
-            <property name="y">276</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">1024</property>
-            <property name="y">291</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">99</property>
-            <property name="y">426</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">354</property>
-            <property name="y">426</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">576</property>
-            <property name="y">429</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">801</property>
-            <property name="y">441</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">1026</property>
-            <property name="y">437</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">121</property>
-            <property name="y">591</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">370</property>
-            <property name="y">588</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">586</property>
-            <property name="y">601</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">812</property>
-            <property name="y">602</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel" id="PLAYERDIFF">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">320</property>
-            <property name="y">88</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
-  <object class="GtkWindow" id="PLATEAUDEJEUFACILE">
-    <property name="can-focus">False</property>
-    <property name="default-width">1100</property>
-    <property name="default-height">800</property>
-    <child>
-      <object class="GtkFixed">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <child>
-          <object class="GtkButton" id="carte1">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage" id="carte">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">129</property>
-            <property name="y">267</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="carte2">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">335</property>
-            <property name="y">290</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="carte3">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage" id="carte1=">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">558</property>
-            <property name="y">297</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="carte4">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">113</property>
-            <property name="y">438</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="carte5">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">353</property>
-            <property name="y">459</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="carte6">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">580</property>
-            <property name="y">472</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel" id="PLAYERFAC">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">153</property>
-            <property name="y">73</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
-  <object class="GtkWindow" id="PLATEAUDEJEUMOYEN ">
-    <property name="can-focus">False</property>
-    <property name="default-width">1200</property>
-    <property name="default-height">896</property>
-    <child>
-      <object class="GtkFixed">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">105</property>
-            <property name="y">294</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">304</property>
-            <property name="y">312</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">528</property>
-            <property name="y">331</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">741</property>
-            <property name="y">344</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">98</property>
-            <property name="y">485</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">306</property>
-            <property name="y">512</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">555</property>
-            <property name="y">518</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">773</property>
-            <property name="y">534</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">961</property>
-            <property name="y">351</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\doscarte.PNG</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="x">987</property>
-            <property name="y">551</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel" id="PLAYERMOY">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">510</property>
-            <property name="y">146</property>
           </packing>
         </child>
       </object>
@@ -1444,7 +491,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkEntry">
+          <object class="GtkEntry" id="PSEUDO41">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1459,7 +506,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkEntry">
+          <object class="GtkEntry" id="PSEUDO42">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1474,7 +521,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="CONFIRMATION4">
             <property name="width-request">130</property>
             <property name="height-request">50</property>
             <property name="visible">True</property>
@@ -1495,7 +542,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkEntry">
+          <object class="GtkEntry" id="PSEUDO43">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1510,7 +557,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkEntry">
+          <object class="GtkEntry" id="PSEUDO44">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1524,149 +571,25 @@
             <property name="y">625</property>
           </packing>
         </child>
-      </object>
-    </child>
-  </object>
-  <object class="GtkWindow" id="TOP10">
-    <property name="can-focus">False</property>
-    <property name="default-width">1100</property>
-    <property name="default-height">820</property>
-    <child>
-      <object class="GtkFixed">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
         <child>
-          <object class="GtkButton" id="RETOURNERTP10">
-            <property name="label" translatable="yes">RETOURNER</property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
+          <object class="GtkButton">
+            <property name="width-request">57</property>
+            <property name="height-request">45</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
-            <property name="margin-start">2</property>
-            <property name="margin-end">2</property>
-            <property name="margin-bottom">4</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\goback3.PNG</property>
+              </object>
+            </child>
           </object>
           <packing>
-            <property name="x">89</property>
-            <property name="y">648</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel" id="joueur1">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">45</property>
-            <property name="y">114</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">78</property>
-            <property name="y">229</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">92</property>
-            <property name="y">352</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">114</property>
-            <property name="y">470</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">136</property>
-            <property name="y">573</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">82</property>
-            <property name="y">53</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">263</property>
-            <property name="y">65</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">314</property>
-            <property name="y">201</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="x">331</property>
-            <property name="y">365</property>
+            <property name="x">420</property>
+            <property name="y">670</property>
           </packing>
         </child>
       </object>
@@ -1702,7 +625,7 @@
               <object class="GtkImage">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="pixbuf">..\PROJET C\Images Projet C\BUTTON\goback.PNG</property>
+                <property name="pixbuf">Images Projet C\BUTTON\goback3.PNG</property>
               </object>
             </child>
           </object>
@@ -1718,6 +641,10 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">JOUEUR 1</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 13"/>
+              <attribute name="foreground" value="#f9f9f0f06b6b"/>
+            </attributes>
           </object>
           <packing>
             <property name="x">420</property>
@@ -1731,6 +658,10 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">JOUEUR 2</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 13"/>
+              <attribute name="foreground" value="#dededddddada"/>
+            </attributes>
           </object>
           <packing>
             <property name="x">420</property>
@@ -1744,6 +675,10 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">JOUEUR3</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 13"/>
+              <attribute name="foreground" value="#c5f8819a1b0e"/>
+            </attributes>
           </object>
           <packing>
             <property name="x">420</property>
@@ -1757,6 +692,9 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">JOEUUR 4</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 13"/>
+            </attributes>
           </object>
           <packing>
             <property name="x">420</property>
@@ -1770,6 +708,9 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">JOUEUR 5</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 13"/>
+            </attributes>
           </object>
           <packing>
             <property name="x">420</property>
@@ -1783,6 +724,9 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">7</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 15"/>
+            </attributes>
           </object>
           <packing>
             <property name="x">670</property>
@@ -1796,6 +740,9 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">4</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 15"/>
+            </attributes>
           </object>
           <packing>
             <property name="x">670</property>
@@ -1809,6 +756,9 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">3</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 15"/>
+            </attributes>
           </object>
           <packing>
             <property name="x">670</property>
@@ -1822,6 +772,9 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">3</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 13"/>
+            </attributes>
           </object>
           <packing>
             <property name="x">670</property>
@@ -1835,6 +788,9 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">2</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 13"/>
+            </attributes>
           </object>
           <packing>
             <property name="x">670</property>
@@ -1876,7 +832,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkEntry">
+          <object class="GtkEntry" id="PSEUDO31">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1891,7 +847,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkEntry">
+          <object class="GtkEntry" id="PSEUDO32">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1906,7 +862,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="CONFIRMATION3">
             <property name="width-request">130</property>
             <property name="height-request">50</property>
             <property name="visible">True</property>
@@ -1927,7 +883,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkEntry">
+          <object class="GtkEntry" id="PSEUDO33">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1939,6 +895,27 @@
           <packing>
             <property name="x">435</property>
             <property name="y">600</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">60</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\goback3.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">420</property>
+            <property name="y">640</property>
           </packing>
         </child>
       </object>
@@ -1963,7 +940,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkEntry">
+          <object class="GtkEntry" id="PSEUDO11">
             <property name="width-request">150</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1978,7 +955,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="CONFIRMATION1">
             <property name="width-request">130</property>
             <property name="height-request">50</property>
             <property name="visible">True</property>
@@ -1998,19 +975,377 @@
             <property name="y">635</property>
           </packing>
         </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">60</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\goback3.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">420</property>
+            <property name="y">640</property>
+          </packing>
+        </child>
       </object>
     </child>
   </object>
-  <object class="GtkWindow">
+  <object class="GtkWindow" id="difficile">
     <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="default-width">1200</property>
+    <property name="default-height">896</property>
     <child>
-      <placeholder/>
-    </child>
-  </object>
-  <object class="GtkWindow">
-    <property name="can-focus">False</property>
-    <child>
-      <placeholder/>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">Images Projet C\background\jeudifficile.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">220</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">220</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">355</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">355</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">109</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">625</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">760</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">625</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">760</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">150</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">JOUEUR 1</property>
+            <attributes>
+              <attribute name="font-desc" value="Schadow BT Bold Italic 14"/>
+              <attribute name="foreground" value="#eded33333b3b"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">220</property>
+            <property name="y">340</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">50</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">15</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 20"/>
+              <attribute name="foreground" value="#eded33333b3b"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">940</property>
+            <property name="y">290</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">895</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">895</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">625</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+      </object>
     </child>
   </object>
   <object class="GtkWindow" id="facile">
@@ -2037,8 +1372,12 @@
             <property name="height-request">30</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">vddvvdffd</property>
+            <property name="label" translatable="yes">joueur1</property>
             <property name="width-chars">15</property>
+            <attributes>
+              <attribute name="font-desc" value="Schadow BT Bold Italic 15"/>
+              <attribute name="foreground" value="#eded33333b3b"/>
+            </attributes>
           </object>
           <packing>
             <property name="x">400</property>
@@ -2051,7 +1390,11 @@
             <property name="height-request">30</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">label</property>
+            <property name="label" translatable="yes">15</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 20"/>
+              <attribute name="foreground" value="#eded33333b3b"/>
+            </attributes>
           </object>
           <packing>
             <property name="x">750</property>
@@ -2059,7 +1402,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="carteun">
+          <object class="GtkButton" id="carte11">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -2080,7 +1423,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte21">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -2101,7 +1444,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte12">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -2122,7 +1465,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte22">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -2143,7 +1486,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte13">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -2164,7 +1507,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte23">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -2187,40 +1530,13 @@
       </object>
     </child>
   </object>
-  <object class="GtkWindow" id="fuck">
+  <object class="GtkWindow" id="findepartie">
     <property name="can-focus">False</property>
-    <child>
-      <object class="GtkStack">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <child>
-          <object class="GtkLayout">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage">
-                <property name="width-request">100</property>
-                <property name="height-request">80</property>
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">..\PROJET C\Images Projet C\background\acceuil.png</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="name">page0</property>
-            <property name="title" translatable="yes">page0</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
-  <object class="GtkWindow" id="noob">
-    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
     <property name="default-width">1200</property>
     <property name="default-height">896</property>
     <child>
-      <object class="GtkLayout">
+      <object class="GtkFixed">
         <property name="visible">True</property>
         <property name="can-focus">False</property>
         <child>
@@ -2229,70 +1545,442 @@
             <property name="height-request">80</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="pixbuf">..\PROJET C\Images Projet C\background\acceuil.png</property>
+            <property name="pixbuf">Images Projet C\background\findejeu2.png</property>
           </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">140</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">jouer1</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 12"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">440</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">140</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">label</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 12"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">440</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">140</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">label</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 12"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">440</property>
+            <property name="y">460</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">140</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">label</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 12"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">440</property>
+            <property name="y">490</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">140</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">12</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 13"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">140</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">10</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 12"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">140</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">5</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 12"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">460</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">140</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">3</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 12"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">490</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">130</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\btnacceuill.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">535</property>
+            <property name="y">575</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">130</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\RECOMMENCER.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">535</property>
+            <property name="y">520</property>
+          </packing>
         </child>
       </object>
     </child>
   </object>
-  <object class="GtkWindow" id="window1">
+  <object class="GtkWindow" id="moyen">
     <property name="can-focus">False</property>
-    <property name="default-width">1100</property>
-    <property name="default-height">820</property>
+    <property name="resizable">False</property>
+    <property name="default-width">1200</property>
+    <property name="default-height">896</property>
     <child>
       <object class="GtkFixed">
         <property name="visible">True</property>
         <property name="can-focus">False</property>
         <child>
-          <object class="GtkButton" id="jouer">
+          <object class="GtkImage">
             <property name="width-request">100</property>
             <property name="height-request">80</property>
             <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">Images Projet C\background\jeudifficile.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
-            <property name="margin-start">302</property>
-            <property name="margin-end">26</property>
-            <property name="margin-top">55</property>
-            <property name="margin-bottom">101</property>
+            <property name="relief">none</property>
             <child>
               <object class="GtkImage">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="pixbuf">..\..\OneDrive\Bureau\amine\proj\Images Projet C\playmini.PNG</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
               </object>
             </child>
           </object>
           <packing>
-            <property name="x">151</property>
-            <property name="y">97</property>
+            <property name="x">220</property>
+            <property name="y">430</property>
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="score">
-            <property name="label" translatable="yes">score</property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
           </object>
           <packing>
-            <property name="x">368</property>
-            <property name="y">213</property>
+            <property name="x">220</property>
+            <property name="y">580</property>
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="quittez">
-            <property name="label" translatable="yes">quittez </property>
-            <property name="width-request">100</property>
-            <property name="height-request">80</property>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
           </object>
           <packing>
-            <property name="x">459</property>
-            <property name="y">379</property>
+            <property name="x">355</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">355</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">109</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">625</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">760</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">625</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="width-request">70</property>
+            <property name="height-request">105</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">Images Projet C\BUTTON\doscarte.PNG</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">760</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">150</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">label</property>
+            <attributes>
+              <attribute name="font-desc" value="Schadow BT Bold Italic 14"/>
+              <attribute name="foreground" value="#eded33333b3b"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">220</property>
+            <property name="y">340</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">50</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">15</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Oblique 20"/>
+              <attribute name="foreground" value="#eded33333b3b"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">940</property>
+            <property name="y">290</property>
           </packing>
         </child>
       </object>

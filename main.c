@@ -21,6 +21,8 @@ typedef struct {
     const gchar *pseudojoueur3;
     const gchar *pseudojoueur4;
     GtkWidget   *carte[14];
+    GtkWidget   *carteimage[8];
+    GtkWidget   *btncontrole[8];
     GtkWidget   *entrerpseudo[5];
 
 }_widgets;
@@ -78,10 +80,37 @@ void fctexporter(_joueur player ){
 }
 
 
+void affectationaleatoirecarte(int valcarte[],int n){
 
-void hide(GtkWidget *ButtonExplore,GtkWidget *carte){
+    int compteur[n/2];
+    memset(compteur, 0, n/2 * sizeof(int));
+    memset(valcarte, -1, n * sizeof(int));
+    srand(time(0));
 
-     gtk_widget_destroy(carte);
+    int u=0, i=0;
+
+    for(i=0;i<n/2;i++){
+        //printf("Compteur : %d", compteur[i]);
+        while(compteur[i] < 2){
+            // Tirer une valeur aleatoire entre 0 et 5
+            u = rand()%n;
+            //printf("Valeur de U : %d", u);
+            //printf("Iteration %d", i);
+            if (valcarte[u] == -1){
+                valcarte[u] = i;
+                compteur[i]++;
+            }
+        }
+    }
+
+    }
+
+
+void flipcarte(GtkWidget *ButtonExplore,GtkButton *carte){
+     GtkWidget *image=gtk_image_new();
+     gtk_image_set_from_file(GTK_IMAGE(image),"./Images Projet C/BUTTON/tigre.png");
+     gtk_button_set_image(carte,GTK_IMAGE(image));
+
 
 
 
@@ -95,26 +124,33 @@ void hide(GtkWidget *ButtonExplore,GtkWidget *carte){
 
 
 void fctjeufacile(GtkWidget *ButtonExplore,_widgets *g_widget){
-    gtk_widget_hide(g_widget->window[0]);
-    GtkWidget *window7;
-    GtkWidget *carte[6];
+    gtk_widget_hide(g_widget->window[3]);
+
+
     GtkBuilder *builder;
-    GtkWidget  *player ;
+
 
 
     builder=gtk_builder_new_from_file("INTERFACEDUJEU.glade");
-    g_widget->window[1]=GTK_WIDGET(gtk_builder_get_object(builder,"facile"));
+    g_widget->window[4]=GTK_WIDGET(gtk_builder_get_object(builder,"facile"));
 
-    carte[0]=GTK_WIDGET(gtk_builder_get_object(builder,"carteun"));
-    carte[1]=GTK_WIDGET(gtk_builder_get_object(builder,"carte2"));
-    carte[2]=GTK_WIDGET(gtk_builder_get_object(builder,"carte3"));
-    carte[3]=GTK_WIDGET(gtk_builder_get_object(builder,"carte4"));
-    carte[4]=GTK_WIDGET(gtk_builder_get_object(builder,"carte5"));
-    carte[5]=GTK_WIDGET(gtk_builder_get_object(builder,"carte6"));
-    player=GTK_WIDGET(gtk_builder_get_object(builder,"IMAGE1"));
-    g_signal_connect(G_OBJECT(carte[0]),"clicked",G_CALLBACK(hide),carte[0]);
+    g_widget->carte[0]=GTK_WIDGET(gtk_builder_get_object(builder,"carte11"));
+    g_widget->carte[1]=GTK_WIDGET(gtk_builder_get_object(builder,"carte12"));
+    g_widget->carte[2]=GTK_WIDGET(gtk_builder_get_object(builder,"carte13"));
+    g_widget->carte[3]=GTK_WIDGET(gtk_builder_get_object(builder,"carte21"));
+    g_widget->carte[4]=GTK_WIDGET(gtk_builder_get_object(builder,"carte22"));
+    g_widget->carte[5]=GTK_WIDGET(gtk_builder_get_object(builder,"carte23"));
 
-    gtk_widget_show_all(g_widget->window[1]);
+    g_signal_connect(G_OBJECT(g_widget->carte[0]),"clicked",G_CALLBACK(flipcarte),g_widget->carte[0]);
+    g_signal_connect(G_OBJECT(g_widget->carte[1]),"clicked",G_CALLBACK(flipcarte),g_widget->carte[1]);
+    g_signal_connect(G_OBJECT(g_widget->carte[2]),"clicked",G_CALLBACK(flipcarte),g_widget->carte[2]);
+    g_signal_connect(G_OBJECT(g_widget->carte[3]),"clicked",G_CALLBACK(flipcarte),g_widget->carte[3]);
+    g_signal_connect(G_OBJECT(g_widget->carte[4]),"clicked",G_CALLBACK(flipcarte),g_widget->carte[4]);
+    g_signal_connect(G_OBJECT(g_widget->carte[5]),"clicked",G_CALLBACK(flipcarte),g_widget->carte[5]);
+
+    gtk_window_set_position(g_widget->window[4],GTK_WIN_POS_CENTER);
+
+    gtk_widget_show_all(g_widget->window[4]);
 
 
 }
@@ -202,6 +238,8 @@ void fctjeumoyen(GtkWidget *ButtonExplore,_widgets *g_widget){
 
   }
 
+
+
   void retenirpseudo(GtkWidget *ButtonExplore,_widgets *g_widget){
       g_widget->pseudojoueur1=gtk_entry_get_text(GTK_ENTRY(g_widget->entrerpseudo[1]));
       g_widget->pseudojoueur2=gtk_entry_get_text(GTK_ENTRY(g_widget->entrerpseudo[2]));
@@ -210,6 +248,81 @@ void fctjeumoyen(GtkWidget *ButtonExplore,_widgets *g_widget){
   }
 
 
+
+
+ void fctquatrepseudo(_widgets *g_widget){
+
+    GtkBuilder *builder;
+
+
+    builder=gtk_builder_new_from_file("INTERFACEDUJEU.glade");
+    g_widget->window[3]=GTK_WIDGET(gtk_builder_get_object(builder,"QUATREPSEUDO"));
+
+    g_widget->entrerpseudo[1]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDO41"));
+    g_widget->entrerpseudo[2]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDO42"));
+    g_widget->entrerpseudo[3]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDO43"));
+    g_widget->entrerpseudo[4]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDO44"));
+
+    g_widget->btncontrole[2]=GTK_WIDGET(gtk_builder_get_object(builder,"CONFIRMATION4"));
+
+
+
+}
+
+
+
+
+  void fctroispseudo(_widgets *g_widget){
+
+    GtkBuilder *builder;
+    builder=gtk_builder_new_from_file("INTERFACEDUJEU.glade");
+
+
+    g_widget->window[3]=GTK_WIDGET(gtk_builder_get_object(builder,"TROISPSEUDO"));
+
+    g_widget->entrerpseudo[1]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDO31"));
+    g_widget->entrerpseudo[2]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDO32"));
+    g_widget->entrerpseudo[3]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDO33"));
+
+    g_widget->btncontrole[2]=GTK_WIDGET(gtk_builder_get_object(builder,"CONFIRMATION3"));
+
+
+
+}
+
+
+void fctdeuxpseudo(_widgets *g_widget){
+
+    GtkBuilder *builder;
+
+    builder=gtk_builder_new_from_file("INTERFACEDUJEU.glade");
+    g_widget->window[3]=GTK_WIDGET(gtk_builder_get_object(builder,"DEUXPSEUDO"));
+
+    g_widget->entrerpseudo[1]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDO21"));
+    g_widget->entrerpseudo[2]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDO22"));
+
+   g_widget->btncontrole[2]=GTK_WIDGET(gtk_builder_get_object(builder,"CONFIRMATION2"));
+
+
+}
+
+
+void fctunpseudo(_widgets *g_widget){
+
+    GtkBuilder *builder;
+
+
+    builder=gtk_builder_new_from_file("INTERFACEDUJEU.glade");
+
+    g_widget->window[3]=GTK_WIDGET(gtk_builder_get_object(builder,"UNPSEUDO"));
+
+    g_widget->entrerpseudo[1]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDO11"));
+
+    g_widget->btncontrole[2]=GTK_WIDGET(gtk_builder_get_object(builder,"CONFIRMATION1"));
+
+
+
+}
 
 
 
@@ -227,44 +340,36 @@ void fctjeumoyen(GtkWidget *ButtonExplore,_widgets *g_widget){
 
     builder=gtk_builder_new_from_file("INTERFACEDUJEU.glade");
 
+
     switch(g_widget->nbrjoueur){
-        case 1 : g_widget->window[3]=GTK_WIDGET(gtk_builder_get_object(builder,"UNPSEUDO"));break;
+        case 1 : fctunpseudo(g_widget);break;
 
-        case 2 : g_widget->window[3]=GTK_WIDGET(gtk_builder_get_object(builder,"DEUXPSEUDO "));break;
+        case 2 : fctdeuxpseudo(g_widget);break;
 
-        case 3 : g_widget->window[3]=GTK_WIDGET(gtk_builder_get_object(builder,"TROISPSEUDO"));break;
+        case 3 : fctroispseudo(g_widget);break;
 
-        case 4 : g_widget->window[3]=GTK_WIDGET(gtk_builder_get_object(builder,"QUATREPSEUDO"));break;
+        case 4 : fctquatrepseudo(g_widget);break;
 
         }
 
 
-    g_widget->window[3]=GTK_WIDGET(gtk_builder_get_object(builder,"UNPSEUDO"));
 
-   /* g_widget->entrerpseudo[1]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDOJOUEUR1"));
-    g_widget->entrerpseudo[2]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDOJOUEUR2"));
-    g_widget->entrerpseudo[3]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDOJOUEUR3"));
-    g_widget->entrerpseudo[4]=GTK_WIDGET(gtk_builder_get_object(builder,"PSEUDOJOUEUR4"));
-    confirmation=GTK_WIDGET(gtk_builder_get_object(builder,"CONFIRMATION"));*/
-
-
-
+    g_signal_connect(G_OBJECT(g_widget->btncontrole[2]),"clicked",G_CALLBACK(retenirpseudo),g_widget );
 
     switch(g_widget->diff){
 
-     case FACILE :     {g_signal_connect(G_OBJECT(confirmation),"clicked",G_CALLBACK(retenirpseudo),g_widget );
-                        g_signal_connect(G_OBJECT(confirmation),"clicked",G_CALLBACK(fctjeufacile),g_widget );};break;
+       case FACILE :        g_signal_connect(G_OBJECT(g_widget->btncontrole[2]),"clicked",G_CALLBACK(fctjeufacile),g_widget );break;
 
-     case MOYEN:       {g_signal_connect(G_OBJECT(confirmation),"clicked",G_CALLBACK(retenirpseudo),g_widget );
-                        g_signal_connect(G_OBJECT(confirmation),"clicked",G_CALLBACK(fctjeumoyen),g_widget );};break;
+       case MOYEN:          g_signal_connect(G_OBJECT(g_widget->btncontrole[2]),"clicked",G_CALLBACK(fctjeumoyen),g_widget );break;
 
-     case DIFFICILE:   {g_signal_connect(G_OBJECT(confirmation),"clicked",G_CALLBACK(retenirpseudo),g_widget );
-                        g_signal_connect(G_OBJECT(confirmation),"clicked",G_CALLBACK(fctjeudifficile),g_widget );};break;
+       case DIFFICILE:       g_signal_connect(G_OBJECT(g_widget->btncontrole[2]),"clicked",G_CALLBACK(fctjeudifficile),g_widget );break;
 
     }
 
 
-    gtk_widget_show_all(g_widget->window[3]);
+     gtk_window_set_position(g_widget->window[3],GTK_WIN_POS_CENTER);
+
+     gtk_widget_show_all(g_widget->window[3]);
   }
 
 
@@ -435,6 +540,31 @@ void exemple(GtkWidget *ButtonExplore, _widgets *g_widget){
 
 }
 
+
+
+/*void getimage(_widgets *g_widget){
+
+    g_widget->carteimage[1]=gtk_image_new();
+    gtk_image_set_from_file(GTK_IMAGE(g_widget->carteimage[1]),"./Images Projet C/BUTTON/tigre.png");
+
+    g_widget->carteimage[2]=gtk_image_new();
+    gtk_image_set_from_file(GTK_IMAGE(g_widget->carteimage[2]),"./Images Projet C/BUTTON/panda.png");
+
+    g_widget->carteimage[3]=gtk_image_new();
+    gtk_image_set_from_file(GTK_IMAGE(g_widget->carteimage[3]),"./Images Projet C/BUTTON/souris.png");
+
+    g_widget->carteimage[4]=gtk_image_new();
+    gtk_image_set_from_file(GTK_IMAGE(g_widget->carteimage[4]),"./Images Projet C/BUTTON/singe.png");
+
+    g_widget->carteimage[5]=gtk_image_new();
+    gtk_image_set_from_file(GTK_IMAGE(g_widget->carteimage[5]),"./Images Projet C/BUTTON/serpent.png");
+
+    g_widget->carteimage[6]=gtk_image_new();
+    gtk_image_set_from_file(GTK_IMAGE(g_widget->carteimage[6]),"./Images Projet C/BUTTON/taureau.png");
+
+    g_widget->carteimage[7]=gtk_image_new();
+    gtk_image_set_from_file(GTK_IMAGE(g_widget->carteimage[1]),"./Images Projet C/BUTTON/oiseau.png");
+}*/
 
 
 

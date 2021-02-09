@@ -24,7 +24,7 @@ void fcttridecroissant(){//_joueur player[n] variable global
                        change = player[i];
                        palyer[i] = player[j];
                         player[j]=change;}}}}*/
-void affectationaleatoirecarte(int n){
+/*void affectationaleatoirecarte(int n){
     int valcarte[n];
     int compteur[n/2];
     memset(compteur, 0, n/2 * sizeof(int));
@@ -46,5 +46,5 @@ void affectationaleatoirecarte(int n){
             }
         }
     }
-    }
+    }*/
 
