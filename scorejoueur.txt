@@ -1,3 +1,7 @@
 nizar  585
 
 hamza  595
+
+tazi   986
+
+fi     1000
