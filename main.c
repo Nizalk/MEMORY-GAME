@@ -173,14 +173,14 @@ void fctverificationduchoix(_widgets *g_widget,GtkWidget *image){
 
                   }
               else {/*Sleep(500);*/
-                    g_widget->joueurjoue++;
+                    if(g_widget->nbrjoueur){g_widget->joueurjoue++;
                     gtk_button_set_image(g_widget->carte[g_widget->cartechoisit[0]],GTK_IMAGE(doscarte));
                     gtk_button_set_image(g_widget->carte[g_widget->cartechoisit[1]],GTK_IMAGE(doscarte2));
                     if(g_widget->joueurjoue<g_widget->nbrjoueur+1){ switch (g_widget->joueurjoue){
 
                                     case 1 :    {gtk_label_set_text(GTK_LABEL(g_widget->label),g_widget->pseudojoueur2);g_widget->joueurjoue=2;};break;
                                     case 2 :    {gtk_label_set_text(GTK_LABEL(g_widget->label),g_widget->pseudojoueur3);g_widget->joueurjoue=3;};break;
-                                    case 3 :    {gtk_label_set_text(GTK_LABEL(g_widget->label),g_widget->pseudojoueur4);g_widget->joueurjoue=4;};break;}}
+                                    case 3 :    {gtk_label_set_text(GTK_LABEL(g_widget->label),g_widget->pseudojoueur4);g_widget->joueurjoue=4;};break;}}}
 
 
                        else{ gtk_label_set_text(GTK_LABEL(g_widget->label),g_widget->pseudojoueur1);
