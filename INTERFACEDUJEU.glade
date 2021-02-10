@@ -1750,7 +1750,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte211">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1771,7 +1771,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte221">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1792,7 +1792,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte222">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1813,7 +1813,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte212">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1834,7 +1834,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte213">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1855,7 +1855,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte223">
             <property name="width-request">70</property>
             <property name="height-request">109</property>
             <property name="visible">True</property>
@@ -1876,7 +1876,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte214">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1897,7 +1897,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte215">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1918,7 +1918,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte224">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>
@@ -1939,7 +1939,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="carte225">
             <property name="width-request">70</property>
             <property name="height-request">105</property>
             <property name="visible">True</property>

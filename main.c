@@ -23,7 +23,8 @@ char pseudo[15];
 int  score;}_joueur;
 
 typedef struct {
-    GtkWidget   *window[15];
+    GtkWidget   *window[9];
+    /*GtkWidget   *ni[5];*/
     int          diff;
     int          nbrjoueur;
     int          scorejoueur[4];
@@ -64,20 +65,21 @@ void fctfindejeu(_widgets *g_widget);
 
 
 
-/*void fctexporter(_joueur player[],int nbrjoueurdelapartie ){
+void fctexporter(_joueur player ){
   FILE *fichier;
-
   fichier=fopen("scorejoueur.txt","w");
-  if (fichier != NULL){
-  fprintf(fichier,"%s     %d",player.pseudo,player.score);}
+
+  if (fichier != NULL){fprintf(fichier,"%s   %d",player.pseudo,player.score);}
 
   fclose(fichier);
-}*/
+
+}
 
 
 void affectationaleatoirecarte(int valcarte[],int n){
 
     int compteur[n/2];
+    //affecte n zeros au tableaux compteur et des -1 pour tableau valcarte
     memset(compteur, 0, n/2 * sizeof(int));
     memset(valcarte, -1, n * sizeof(int));
     srand(time(0));
@@ -85,12 +87,11 @@ void affectationaleatoirecarte(int valcarte[],int n){
     int u=0, i=0;
 
     for(i=0;i<n/2;i++){
-        //printf("Compteur : %d", compteur[i]);
+
         while(compteur[i] < 2){
             // Tirer une valeur aleatoire entre 0 et 5
             u = rand()%n;
-            //printf("Valeur de U : %d", u);
-            //printf("Iteration %d", i);
+
             if (valcarte[u] == -1){
                 valcarte[u] = i;
                 compteur[i]++;
@@ -126,7 +127,10 @@ void fctverificationduchoix(_widgets *g_widget,GtkWidget *image){
                                                                   g_widget->cartechoisit[1]=g_widget->numcarte;}
 
      getimage(g_widget,image);
+
      gtk_button_set_image(g_widget->carte[g_widget->numcarte],GTK_IMAGE(image));
+
+
      g_widget->compteur++;
 
      if(g_widget->compteur==2){
@@ -139,7 +143,24 @@ void fctverificationduchoix(_widgets *g_widget,GtkWidget *image){
                   if(g_widget->findepartie==g_widget->diff/2){g_widget->findepartie=0;
                                                               g_widget->compteur=0;
                                                                g_widget->indicecarte[0]=1;
-                                                               fctfindejeu(g_widget);}
+                                                               _joueur player ;
+                                                               /*player.pseudo=g_widget->pseudojoueur1;
+                                                               atoi(player.score,_widget->scorejoueur[1],10);
+
+
+                                                               fctexporter(player);
+                                                               player->pseudo=g_widget->pseudojoueur2;
+                                                               player->score=g_widget->scorejoueur[2];
+                                                               fctexporter(player);
+                                                               player->pseudo=g_widget->pseudojoueur3;
+                                                               player->score=g_widget->scorejoueur[3];
+                                                               fctexporter(player);
+                                                               player->pseudo=g_widget->pseudojoueur4;
+                                                               player->score=g_widget->scorejoueur[4];
+                                                               fctexporter(player);*/
+
+
+                                                                   fctfindejeu(g_widget);}
 
                   }
               else {/*Sleep(500);*/
@@ -189,8 +210,7 @@ void flipcarte1(GtkWidget *ButtonExplore,_widgets *g_widget){
 void flipcarte2(GtkWidget *ButtonExplore,_widgets *g_widget){
      GtkWidget *image=gtk_image_new();
      g_widget->numcarte=1;
-     /*getimage(g_widget,image);
-     gtk_button_set_image(g_widget->carte[1],GTK_IMAGE(image));*/
+
      fctverificationduchoix(g_widget,image);
 }
 
@@ -225,49 +245,77 @@ void flipcarte5(GtkWidget *ButtonExplore,_widgets *g_widget){
 void flipcarte6(GtkWidget *ButtonExplore,_widgets *g_widget){
      GtkWidget *image=gtk_image_new();
      g_widget->numcarte=5;
-    /* getimage(g_widget,image);
-     gtk_button_set_image(g_widget->carte[5],GTK_IMAGE(image));*/
+
      fctverificationduchoix(g_widget,image);
 
 }
 
 void flipcarte7(GtkWidget *ButtonExplore,_widgets *g_widget){
-    gtk_button_set_image( g_widget->carte[6],GTK_IMAGE(g_widget->carteimage[g_widget->indicecarte[6]]));
-}
+    GtkWidget *image=gtk_image_new();
+    g_widget->numcarte=6;
+    fctverificationduchoix(g_widget,image);}
+
+
+
+
 
 void flipcarte8(GtkWidget *ButtonExplore,_widgets *g_widget){
-    gtk_button_set_image( g_widget->carte[7],GTK_IMAGE(g_widget->carteimage[g_widget->indicecarte[7]]));
-}
+     GtkWidget *image=gtk_image_new();
+     g_widget->numcarte=7;
+
+     fctverificationduchoix(g_widget,image);
+    }
+
+
 
 void flipcarte9(GtkWidget *ButtonExplore,_widgets *g_widget){
-    gtk_button_set_image( g_widget->carte[8],GTK_IMAGE(g_widget->carteimage[g_widget->indicecarte[8]]));
+     GtkWidget *image=gtk_image_new();
+     g_widget->numcarte=8;
+
+     fctverificationduchoix(g_widget,image);
 }
 
 void flipcarte10(GtkWidget *ButtonExplore,_widgets *g_widget){
-    gtk_button_set_image( g_widget->carte[9],GTK_IMAGE(g_widget->carteimage[g_widget->indicecarte[9]]));
+     GtkWidget *image=gtk_image_new();
+     g_widget->numcarte=9;
+
+     fctverificationduchoix(g_widget,image);
 }
 
 void flipcarte11(GtkWidget *ButtonExplore,_widgets *g_widget){
-    gtk_button_set_image( g_widget->carte[10],GTK_IMAGE(g_widget->carteimage[g_widget->indicecarte[10]]));
+    GtkWidget *image=gtk_image_new();
+     g_widget->numcarte=10;
+
+     fctverificationduchoix(g_widget,image);
 }
 
 void flipcarte12(GtkWidget *ButtonExplore,_widgets *g_widget){
-    gtk_button_set_image( g_widget->carte[11],GTK_IMAGE(g_widget->carteimage[g_widget->indicecarte[11]]));
+    GtkWidget *image=gtk_image_new();
+     g_widget->numcarte=11;
+
+     fctverificationduchoix(g_widget,image);
 }
 
 
 void flipcarte13(GtkWidget *ButtonExplore,_widgets *g_widget){
-    gtk_button_set_image( g_widget->carte[12],GTK_IMAGE(g_widget->carteimage[g_widget->indicecarte[12]]));
+    GtkWidget *image=gtk_image_new();
+     g_widget->numcarte=12;
+
+     fctverificationduchoix(g_widget,image);
 }
 
 void flipcarte14(GtkWidget *ButtonExplore,_widgets *g_widget){
-    gtk_button_set_image( g_widget->carte[13],GTK_IMAGE(g_widget->carteimage[g_widget->indicecarte[13]]));
+    GtkWidget *image=gtk_image_new();
+     g_widget->numcarte=13;
+
+     fctverificationduchoix(g_widget,image);
 }
 
 void fctfindejeu(_widgets *g_widget){
 
+ gtk_widget_hide(g_widget->btncontrole[0]);
   gtk_widget_hide(g_widget->window[4]);
-
+  gtk_widget_hide(g_widget->window[5]);
     char labelscore[8];
     int transition;
 
@@ -370,58 +418,56 @@ void fctjeufacile(GtkWidget *ButtonExplore,_widgets *g_widget){
  void fctjeudifficile(GtkWidget *ButtonExplore,_widgets *g_widget){
 
     gtk_widget_hide(g_widget->window[3]);
-
+    gtk_widget_hide(g_widget->window[8]);
 
     GtkWidget  *player;
+    g_widget->cartechoisit[0]=-1 ;
+    g_widget->cartechoisit[1]=-1 ;
+    g_widget->compteur=0;
+    g_widget->findepartie=0;
+    g_widget->joueurjoue=0;
+
+    for(int i=0;i<g_widget->nbrjoueur;i++){g_widget->scorejoueur[i]=0;}
+
+    affectationaleatoirecarte(g_widget->indicecarte,DIFFICILE);
 
 
     g_widget->window[5]=GTK_WIDGET(gtk_builder_get_object(builder,"difficile"));
 
     player=GTK_WIDGET(gtk_builder_get_object(builder,"playeringame3"));
 
+
+
     gtk_label_set_text(GTK_LABEL(player),g_widget->pseudojoueur1);
 
-    /*g_widget->carte[0]=GTK_WIDGET(gtk_builder_get_object(builder,"carte311"));
-    g_signal_connect(G_OBJECT( g_widget->carte[0]),"clicked",G_CALLBACK(flipcarte1),NULL );
-
+    g_widget->carte[0]=GTK_WIDGET(gtk_builder_get_object(builder,"carte311"));
+    g_signal_connect(G_OBJECT( g_widget->carte[0]),"clicked",G_CALLBACK(flipcarte1),g_widget );
     g_widget->carte[1]=GTK_WIDGET(gtk_builder_get_object(builder,"carte312"));
-    g_signal_connect(G_OBJECT( g_widget->carte[1]),"clicked",G_CALLBACK(flipcarte2),NULL );
-
+    g_signal_connect(G_OBJECT( g_widget->carte[1]),"clicked",G_CALLBACK(flipcarte2),g_widget );
     g_widget->carte[2]=GTK_WIDGET(gtk_builder_get_object(builder,"carte321"));
-    g_signal_connect(G_OBJECT( g_widget->carte[2]),"clicked",G_CALLBACK(flipcarte7),NULL );
-
+    g_signal_connect(G_OBJECT( g_widget->carte[2]),"clicked",G_CALLBACK(flipcarte3),g_widget);
     g_widget->carte[3]=GTK_WIDGET(gtk_builder_get_object(builder,"carte322"));
-    g_signal_connect(G_OBJECT( g_widget->carte[3]),"clicked",G_CALLBACK(flipcarte7),NULL );
-
+    g_signal_connect(G_OBJECT( g_widget->carte[3]),"clicked",G_CALLBACK(flipcarte4),g_widget );
     g_widget->carte[4]=GTK_WIDGET(gtk_builder_get_object(builder,"carte323"));
-    g_signal_connect(G_OBJECT( g_widget->carte[4]),"clicked",G_CALLBACK(flipcarte7),NULL );
-
+    g_signal_connect(G_OBJECT( g_widget->carte[4]),"clicked",G_CALLBACK(flipcarte5),g_widget );
     g_widget->carte[5]=GTK_WIDGET(gtk_builder_get_object(builder,"carte324"));
-    g_signal_connect(G_OBJECT( g_widget->carte[5]),"clicked",G_CALLBACK(flipcarte7),NULL );
-
+    g_signal_connect(G_OBJECT( g_widget->carte[5]),"clicked",G_CALLBACK(flipcarte6),g_widget );
     g_widget->carte[6]=GTK_WIDGET(gtk_builder_get_object(builder,"carte325"));
-    g_signal_connect(G_OBJECT( g_widget->carte[6]),"clicked",G_CALLBACK(flipcarte7),NULL );
-
+    g_signal_connect(G_OBJECT( g_widget->carte[6]),"clicked",G_CALLBACK(flipcarte7),g_widget );
     g_widget->carte[7]=GTK_WIDGET(gtk_builder_get_object(builder,"carte326"));
-    g_signal_connect(G_OBJECT( g_widget->carte[7]),"clicked",G_CALLBACK(flipcarte7),NULL );
-
+    g_signal_connect(G_OBJECT( g_widget->carte[7]),"clicked",G_CALLBACK(flipcarte8),g_widget );
     g_widget->carte[8]=GTK_WIDGET(gtk_builder_get_object(builder,"carte331"));
-    g_signal_connect(G_OBJECT( g_widget->carte[8]),"clicked",G_CALLBACK(flipcarte7),NULL );
-
+    g_signal_connect(G_OBJECT( g_widget->carte[8]),"clicked",G_CALLBACK(flipcarte9),g_widget );
     g_widget->carte[9]=GTK_WIDGET(gtk_builder_get_object(builder,"carte332"));
-    g_signal_connect(G_OBJECT( g_widget->carte[9]),"clicked",G_CALLBACK(flipcarte7),NULL );
-
+    g_signal_connect(G_OBJECT( g_widget->carte[9]),"clicked",G_CALLBACK(flipcarte10),g_widget );
     g_widget->carte[10]=GTK_WIDGET(gtk_builder_get_object(builder,"carte333"));
-    g_signal_connect(G_OBJECT( g_widget->carte[10]),"clicked",G_CALLBACK(flipcarte7),NULL );
-
+    g_signal_connect(G_OBJECT( g_widget->carte[10]),"clicked",G_CALLBACK(flipcarte11),g_widget );
     g_widget->carte[11]=GTK_WIDGET(gtk_builder_get_object(builder,"carte334"));
-    g_signal_connect(G_OBJECT( g_widget->carte[11]),"clicked",G_CALLBACK(flipcarte7),NULL );
-
+    g_signal_connect(G_OBJECT( g_widget->carte[11]),"clicked",G_CALLBACK(flipcarte12),g_widget );
     g_widget->carte[12]=GTK_WIDGET(gtk_builder_get_object(builder,"carte335"));
-    g_signal_connect(G_OBJECT( g_widget->carte[12]),"clicked",G_CALLBACK(flipcarte7),NULL );
-
+    g_signal_connect(G_OBJECT( g_widget->carte[12]),"clicked",G_CALLBACK(flipcarte13),g_widget );
     g_widget->carte[13]=GTK_WIDGET(gtk_builder_get_object(builder,"carte336"));
-    g_signal_connect(G_OBJECT( g_widget->carte[13]),"clicked",G_CALLBACK(flipcarte7),NULL );*/
+    g_signal_connect(G_OBJECT( g_widget->carte[13]),"clicked",G_CALLBACK(flipcarte14),g_widget );
 
 
     gtk_window_set_position(g_widget->window[5],GTK_WIN_POS_CENTER);
@@ -436,9 +482,8 @@ void fctjeufacile(GtkWidget *ButtonExplore,_widgets *g_widget){
 
 void fctjeumoyen(GtkWidget *ButtonExplore,_widgets *g_widget){
 
-    /*gtk_widget_hide(g_widget->window[3]);
+    gtk_widget_hide(g_widget->window[3]);
     gtk_widget_hide(g_widget->window[8]);
-
 
     //inialiser les valeurs
 
@@ -447,49 +492,46 @@ void fctjeumoyen(GtkWidget *ButtonExplore,_widgets *g_widget){
     g_widget->compteur=0;
     g_widget->findepartie=0;
     g_widget->joueurjoue=0;
-    for(int i=0;i<g_widget->nbrjoueur;i++){g_widget->scorejoueur[i]=0;}
 
+    for(int i=0;i<g_widget->nbrjoueur;i++){g_widget->scorejoueur[i]=0;}
 
 
     affectationaleatoirecarte(g_widget->indicecarte,MOYEN);
 
+    g_widget->btncontrole[0]=GTK_WIDGET(gtk_builder_get_object(builder,"moyen"));
 
-    g_widget->window[12]=GTK_WIDGET(gtk_builder_get_object(builder,"moyen"));
-
-   /* g_widget->carte[0]=GTK_WIDGET(gtk_builder_get_object(builder,"carte11"));
+    g_widget->carte[0]=GTK_WIDGET(gtk_builder_get_object(builder,"carte211"));
     g_signal_connect(G_OBJECT(g_widget->carte[0]),"clicked",G_CALLBACK(flipcarte1),g_widget);
 
-    g_widget->carte[1]=GTK_WIDGET(gtk_builder_get_object(builder,"carte11"));
-    g_signal_connect(G_OBJECT(g_widget->carte[1]),"clicked",G_CALLBACK(flipcarte1),g_widget);
+    g_widget->carte[1]=GTK_WIDGET(gtk_builder_get_object(builder,"carte212"));
+    g_signal_connect(G_OBJECT(g_widget->carte[1]),"clicked",G_CALLBACK(flipcarte2),g_widget);
 
-    g_widget->carte[2]=GTK_WIDGET(gtk_builder_get_object(builder,"carte11"));
-    g_signal_connect(G_OBJECT(g_widget->carte[2]),"clicked",G_CALLBACK(flipcarte1),g_widget);
+    g_widget->carte[2]=GTK_WIDGET(gtk_builder_get_object(builder,"carte213"));
+    g_signal_connect(G_OBJECT(g_widget->carte[2]),"clicked",G_CALLBACK(flipcarte3),g_widget);
 
-    g_widget->carte[3]=GTK_WIDGET(gtk_builder_get_object(builder,"carte11"));
-    g_signal_connect(G_OBJECT(g_widget->carte[3]),"clicked",G_CALLBACK(flipcarte1),g_widget);
+    g_widget->carte[3]=GTK_WIDGET(gtk_builder_get_object(builder,"carte214"));
+    g_signal_connect(G_OBJECT(g_widget->carte[3]),"clicked",G_CALLBACK(flipcarte4),g_widget);
 
-    g_widget->carte[4]=GTK_WIDGET(gtk_builder_get_object(builder,"carte11"));
-    g_signal_connect(G_OBJECT(g_widget->carte[4]),"clicked",G_CALLBACK(flipcarte1),g_widget);
+    g_widget->carte[4]=GTK_WIDGET(gtk_builder_get_object(builder,"carte215"));
+    g_signal_connect(G_OBJECT(g_widget->carte[4]),"clicked",G_CALLBACK(flipcarte5),g_widget);
 
-    g_widget->carte[5]=GTK_WIDGET(gtk_builder_get_object(builder,"carte11"));
-    g_signal_connect(G_OBJECT(g_widget->carte[5]),"clicked",G_CALLBACK(flipcarte1),g_widget);
+    g_widget->carte[5]=GTK_WIDGET(gtk_builder_get_object(builder,"carte221"));
+    g_signal_connect(G_OBJECT(g_widget->carte[5]),"clicked",G_CALLBACK(flipcarte6),g_widget);
 
-    g_widget->carte[6]=GTK_WIDGET(gtk_builder_get_object(builder,"carte11"));
-    g_signal_connect(G_OBJECT(g_widget->carte[6]),"clicked",G_CALLBACK(flipcarte1),g_widget);
+    g_widget->carte[6]=GTK_WIDGET(gtk_builder_get_object(builder,"carte222"));
+    g_signal_connect(G_OBJECT(g_widget->carte[6]),"clicked",G_CALLBACK(flipcarte7),g_widget);
 
-    g_widget->carte[7]=GTK_WIDGET(gtk_builder_get_object(builder,"carte11"));
-    g_signal_connect(G_OBJECT(g_widget->carte[7]),"clicked",G_CALLBACK(flipcarte1),g_widget);
+    g_widget->carte[7]=GTK_WIDGET(gtk_builder_get_object(builder,"carte223"));
+    g_signal_connect(G_OBJECT(g_widget->carte[7]),"clicked",G_CALLBACK(flipcarte8),g_widget);
 
-    g_widget->carte[8]=GTK_WIDGET(gtk_builder_get_object(builder,"carte11"));
-    g_signal_connect(G_OBJECT(g_widget->carte[8]),"clicked",G_CALLBACK(flipcarte1),g_widget);
+    g_widget->carte[8]=GTK_WIDGET(gtk_builder_get_object(builder,"carte224"));
+    g_signal_connect(G_OBJECT(g_widget->carte[8]),"clicked",G_CALLBACK(flipcarte9),g_widget);
 
-    g_widget->carte[9]=GTK_WIDGET(gtk_builder_get_object(builder,"carte11"));
-    g_signal_connect(G_OBJECT(g_widget->carte[9]),"clicked",G_CALLBACK(flipcarte1),g_widget);
+    g_widget->carte[9]=GTK_WIDGET(gtk_builder_get_object(builder,"carte225"));
+    g_signal_connect(G_OBJECT(g_widget->carte[9]),"clicked",G_CALLBACK(flipcarte10),g_widget);
 
-
-    gtk_window_set_position(g_widget->window[12],GTK_WIN_POS_CENTER);
-
-    gtk_widget_show_all(g_widget->window[12]);*/
+    gtk_window_set_position(g_widget->btncontrole[0],GTK_WIN_POS_CENTER);
+    gtk_widget_show_all(g_widget->btncontrole[0]);
 
 
 
@@ -933,6 +975,7 @@ int main (int argc, char **argv){
 
    return 0;
 }
+
 
 
 
