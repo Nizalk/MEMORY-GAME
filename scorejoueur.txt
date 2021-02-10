@@ -1,9 +1,7 @@
-nizar  2
-
-hamza  3
-
-tazi   4
-
-fi    1
-
-ho    6
+nizar  1
+chaimai 2
+hamza   6zdzd   3
+AZDA   3
+nizarr 800
+qdz   0
+fsf   0
