@@ -1,7 +1,7 @@
-nizar  585
+nizar  3
 
-hamza  595
+hamza  2
 
-tazi   986
+tazi   2
 
-fi     1000
+fi    1
