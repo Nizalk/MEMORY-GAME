@@ -1377,7 +1377,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="joueurquijoue">
             <property name="width-request">200</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1559,7 +1559,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="j1">
             <property name="width-request">140</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1575,7 +1575,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="j2">
             <property name="width-request">140</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1591,7 +1591,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="j3">
             <property name="width-request">140</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1607,7 +1607,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="j4">
             <property name="width-request">140</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1623,7 +1623,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="s1">
             <property name="width-request">140</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1639,7 +1639,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="s2">
             <property name="width-request">140</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1655,7 +1655,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="s3">
             <property name="width-request">140</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
@@ -1671,7 +1671,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="s4">
             <property name="width-request">140</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
