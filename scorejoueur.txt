@@ -1,7 +1,9 @@
-nizar  3
+nizar  2
 
-hamza  2
+hamza  3
 
-tazi   2
+tazi   4
 
 fi    1
+
+ho    6

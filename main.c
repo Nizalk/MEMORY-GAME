@@ -135,47 +135,40 @@ void fctverificationduchoix(_widgets *g_widget,GtkWidget *image){
      g_widget->compteur++;
 
      if(g_widget->compteur==2){
-              if(g_widget->indicecarte[g_widget->cartechoisit[0]]==g_widget->indicecarte[g_widget->cartechoisit[1]]){
-                  /*Sleep(500);*/
+               if(g_widget->indicecarte[g_widget->cartechoisit[0]]==g_widget->indicecarte[g_widget->cartechoisit[1]]){    //le joueur a eu juste sur le choix ddes cartes
+
                   gtk_widget_hide(g_widget->carte[g_widget->cartechoisit[0]]);
                   gtk_widget_hide(g_widget->carte[g_widget->cartechoisit[1]]);
+
                   g_widget->findepartie ++;
                   g_widget->scorejoueur[g_widget->joueurjoue]++;
+
 
                   if(g_widget->findepartie==g_widget->diff/2){g_widget->findepartie=0;
                                                               g_widget->compteur=0;
                                                                g_widget->indicecarte[0]=1;
-                                                               _joueur player ;
-                                                                strcpy(player.pseudo,g_widget->pseudojoueur1);
-                                                               itoa(player.score,g_widget->scorejoueur[0],10);
+                                                              /*_joueur gameur ;
+                                                                strcpy(gameur.pseudo,"hello");
+                                                               itoa(gameur.score,g_widget->scorejoueur[0],10);
 
 
-                                                               fctexporter(player);
-
-                                                               strcpy(player.pseudo,g_widget->pseudojoueur2);
-                                                               itoa(player.score,g_widget->scorejoueur[1],10);
-
-                                                               fctexporter(player);
-
-                                                              strcpy(player.pseudo,g_widget->pseudojoueur3);
-                                                              itoa(player.score,g_widget->scorejoueur[2],10);
+                                                               fctexporter(gameur);*/
 
 
-                                                               fctexporter(player);
-
-                                                               strcpy(player.pseudo,g_widget->pseudojoueur4);
-                                                               itoa(player.score,g_widget->scorejoueur[3],10);
-
-                                                               fctexporter(player);
+                                                                   fctfindejeu(g_widget);}}
 
 
-                                                                   fctfindejeu(g_widget);}
+              else {/*Sleep(500);*/  //le joueur a eu faux sur le choix ddes cartes
 
-                  }
-              else {/*Sleep(500);*/
-                    if(g_widget->nbrjoueur){g_widget->joueurjoue++;
+
+
                     gtk_button_set_image(g_widget->carte[g_widget->cartechoisit[0]],GTK_IMAGE(doscarte));
+
                     gtk_button_set_image(g_widget->carte[g_widget->cartechoisit[1]],GTK_IMAGE(doscarte2));
+
+                    if(g_widget->nbrjoueur==g_widget->joueurjoue+1){gtk_label_set_text(GTK_LABEL(g_widget->label),g_widget->pseudojoueur1);g_widget->nbrjoueur=0;}
+
+                   else{ g_widget->joueurjoue++;
                     if(g_widget->joueurjoue<g_widget->nbrjoueur+1){ switch (g_widget->joueurjoue){
 
                                     case 1 :    {gtk_label_set_text(GTK_LABEL(g_widget->label),g_widget->pseudojoueur2);g_widget->joueurjoue=2;};break;
@@ -183,8 +176,8 @@ void fctverificationduchoix(_widgets *g_widget,GtkWidget *image){
                                     case 3 :    {gtk_label_set_text(GTK_LABEL(g_widget->label),g_widget->pseudojoueur4);g_widget->joueurjoue=4;};break;}}}
 
 
-                       else{ gtk_label_set_text(GTK_LABEL(g_widget->label),g_widget->pseudojoueur1);
-                       g_widget->joueurjoue=0;}}
+                       /*else{ gtk_label_set_text(GTK_LABEL(g_widget->label),g_widget->pseudojoueur1);*/
+                       g_widget->joueurjoue=0;}
                g_widget->compteur=0;
                g_widget->cartechoisit[0]=-1;
                g_widget->cartechoisit[1]=-1;
@@ -320,9 +313,9 @@ void flipcarte14(GtkWidget *ButtonExplore,_widgets *g_widget){
 
 void fctfindejeu(_widgets *g_widget){
 
- gtk_widget_hide(g_widget->btncontrole[0]);
-  gtk_widget_hide(g_widget->window[4]);
-  gtk_widget_hide(g_widget->window[5]);
+    gtk_widget_hide(g_widget->btncontrole[0]);
+    gtk_widget_hide(g_widget->window[4]);
+    gtk_widget_hide(g_widget->window[5]);
     char labelscore[8];
     int transition;
 
@@ -358,14 +351,14 @@ void fctfindejeu(_widgets *g_widget){
     gtk_label_set_text(GTK_LABEL(label[2]),g_widget->pseudojoueur2);//pseudo
 
     label[3]=GTK_WIDGET(gtk_builder_get_object(builder,"s2"));  //score
-    itoa(g_widget->scorejoueur[1],labelscore,10);
+    itoa(g_widget->scorejoueur[2],labelscore,10);
     gtk_label_set_text(GTK_LABEL(label[3]),labelscore);
 
     label[4]=GTK_WIDGET(gtk_builder_get_object(builder,"j3"));
     gtk_label_set_text(GTK_LABEL(label[4]),g_widget->pseudojoueur3);//pseudo
 
     label[5]=GTK_WIDGET(gtk_builder_get_object(builder,"s3"));  //score
-    itoa(g_widget->scorejoueur[2],labelscore,10);
+    itoa(g_widget->scorejoueur[1],labelscore,10);
     gtk_label_set_text(GTK_LABEL(label[5]),labelscore);
 
     label[6]=GTK_WIDGET(gtk_builder_get_object(builder,"j4"));  //pseudo
@@ -380,6 +373,8 @@ void fctfindejeu(_widgets *g_widget){
 
 
     gtk_window_set_position(g_widget->window[8],GTK_WIN_POS_CENTER);
+
+
 
     gtk_widget_show_all(g_widget->window[8]);
 }
@@ -432,6 +427,8 @@ void fctjeufacile(GtkWidget *ButtonExplore,_widgets *g_widget){
     gtk_label_set_text(GTK_LABEL(g_widget->label),g_widget->pseudojoueur1);
 
     gtk_window_set_position(g_widget->window[4],GTK_WIN_POS_CENTER);
+
+
 
     gtk_widget_show_all(g_widget->window[4]);
 
@@ -510,6 +507,8 @@ void fctjeufacile(GtkWidget *ButtonExplore,_widgets *g_widget){
 
     gtk_window_set_position(g_widget->window[5],GTK_WIN_POS_CENTER);
 
+
+
     gtk_widget_show_all(g_widget->window[5]);
 
 
@@ -569,9 +568,11 @@ void fctjeumoyen(GtkWidget *ButtonExplore,_widgets *g_widget){
     g_signal_connect(G_OBJECT(g_widget->carte[9]),"clicked",G_CALLBACK(flipcarte10),g_widget);
 
     g_widget->label=GTK_WIDGET(gtk_builder_get_object(builder,"joueurjou"));
+
     gtk_label_set_text(GTK_LABEL(g_widget->label),g_widget->pseudojoueur1);
 
     gtk_window_set_position(g_widget->btncontrole[0],GTK_WIN_POS_CENTER);
+
 
     gtk_widget_show_all(g_widget->btncontrole[0]);
 
@@ -743,6 +744,8 @@ void fctunpseudo(_widgets *g_widget){
 
      gtk_window_set_position(g_widget->window[3],GTK_WIN_POS_CENTER);
 
+
+
      gtk_widget_show_all(g_widget->window[3]);
   }
 
@@ -801,7 +804,7 @@ void fctunpseudo(_widgets *g_widget){
     g_signal_connect(G_OBJECT(g_widget->btncontrole[6]),"clicked",G_CALLBACK(fctchoixdediffulte),g_widget );
 
 
-
+    system("cls");
     //donner le signal a chaque variable et la fct qui doit la suivre
 
 
@@ -860,6 +863,7 @@ void fctunpseudo(_widgets *g_widget){
 
     gtk_window_set_position(g_widget->window[1],GTK_WIN_POS_CENTER);
 
+
     gtk_widget_show_all(g_widget->window[1]);
   }
 
@@ -879,11 +883,13 @@ void fctimporter(int nbrjoueurdansfichier ){
          fclose(fichier);}
 
 
- void fcttridecroissant(int nbrjoueur){//_joueur player[n] variable global
+ void fcttridecroissant(/*int nbrjoueur*/){
+     //_joueur player[n] variable global
                  _joueur  change;
                   int i,j;
-                   for(i=0;i<nbrjoueur;i++){
-                            for(j=i+1;j<nbrjoueur;j++){
+
+                  for(i=0;i<60;i++){
+                        for(j=i+1;j<60;j++){
                                               if(player[i].score < player[j].score){
                                                                         change=player[i];
                                                                         player[i] = player[j];
@@ -906,7 +912,7 @@ void fctimporter(int nbrjoueurdansfichier ){
 
        fctimporter(nbrjoueurdansfichier);
 
-       fcttridecroissant(nbrjoueurdansfichier);
+       fcttridecroissant(/*nbrjoueurdansfichier*/);
 
 
        label[0]=GTK_WIDGET(gtk_builder_get_object(builder,"pseudo1"));
@@ -948,6 +954,8 @@ void fctimporter(int nbrjoueurdansfichier ){
 
        gtk_window_set_position(g_widget->window[7],GTK_WIN_POS_CENTER);
 
+
+
        gtk_widget_show_all(g_widget->window[7]);
 
     }
@@ -961,6 +969,7 @@ void fctacceuil(GtkWidget *ButtonExplore,_widgets *g_widget){
 
         gtk_widget_hide(g_widget->window[7]);
         gtk_widget_hide(g_widget->window[1]);
+        gtk_widget_hide(g_widget->window[4]);
 
         GtkWidget *jouer;
         GtkWidget *score;
@@ -987,6 +996,8 @@ void fctacceuil(GtkWidget *ButtonExplore,_widgets *g_widget){
 
 
         gtk_window_set_position(g_widget->window[0],GTK_WIN_POS_CENTER);
+
+
 
         /* Affichage de la fenetre principale */
 
